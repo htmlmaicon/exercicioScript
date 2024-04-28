@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opções</title>
+</head>
+<body>
+    <h1>Exercício 8</h1>
+    <a href="vetor.html">Próximo Exercício</a>
+</body>
+    <script>
+        function menu(){
+            alert("Escolha a opção entre a  1 2 3")
+            const opcao = prompt("Qual sua opção?:");
+            
+            
+            switch (parseInt(opcao)) { 
+                case 1:
+                    alert("Opção 1 escolhida!");
+                    break;
+                case 2:
+                    alert("Opção 2 escolhida!");
+                    break;
+                case 3:
+                    alert("Opção 3 escolhida!");
+                    break;         
+                default:    
+                    console.log("Nenhuma opção válida foi escolhida");
+            }
+        }
+
+        
+        menu();
+    </script>
+</html>

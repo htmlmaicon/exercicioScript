@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media vetor</title>
+</head>
+<body>
+    <h1>Exercício 10, Média dos numeros.</h1>
+</body>
+<script>
+    function ExibirMedia(){
+        let matriz = [];
+        matriz.push(parseFloat(prompt("Digite sua nota: ")));
+        matriz.push(parseFloat(prompt("Digite sua nota: ")));
+        matriz.push(parseFloat(prompt("Digite sua nota: ")));
+        
+        let soma = 0;
+        for(let i = 0; i < matriz.length; i++){
+            soma += matriz[i];
+        }
+
+        let media = soma / matriz.length;
+        alert("A média das notas é: " + media);
+        alert(matriz)
+    }
+    ExibirMedia();
+
+</script>
+</html>

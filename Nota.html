@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas</title>
+</head>
+<body>
+  <h1>Exercício 3</h1>
+  <form id="exercicio2">
+    <label for="nota">Nota</label>
+    <input type="text" id="Nota">
+
+    <button type="submit" id="input">input</button>
+    <a href="media.html">Próximo Exercício</a>
+  </form>
+</body>
+<script> 
+  const calculo =  document.getElementById('exercicio2')
+  calculo.addEventListener('submit', function (evento){
+      evento.preventDefault();
+
+      const num1 = parseInt(document.getElementById('Nota').value)
+      
+      if(num1 < 6 ){
+          alert(`Reprovado`)
+      } else if (num1 >= 6 && num1 < 8){
+          alert(`Aprovado`)
+      }else if(num1 >= 8 && num1 < 10) {
+          alert('Aprovado com louvor')
+      }else{
+        alert(`Nota invalida`)
+      }
+  })
+</script>
+</html>

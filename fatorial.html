@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <h1>Exercício 7</h1>
+    <a href="opcoes.html">Próximo Exercício</a>
+    
+</body>
+<script>
+    function fatorial(num){
+        let soma = 1;
+        let contador = num;
+        while(contador > 0){
+            soma *= contador;
+            contador--;   
+        }        
+        return soma;
+    }
+
+    let numero = parseInt(prompt("Digite um número inteiro: "));
+    if (isNaN(numero) || numero < 0) {
+        alert("Por favor, digite um número inteiro não negativo.");
+    } else {
+        alert("O fatorial de " + numero + " é: " + fatorial(numero));
+    }
+</script>
+</html>

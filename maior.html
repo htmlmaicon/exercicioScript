@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maior numero</title>
+</head>
+<body>
+    <h1>Exercício 1</h1>
+    <form id="exercicio1">
+        <label for="numero1">Numero</label>
+        <input type="text" id="Numero1">
+        <label for="numero2">Numero</label>
+        <input type="text" id="Numero2">
+
+        <button type="submit" id="input">input</button>
+        <a href="Nota.html">Próximo Exercício</a>
+    </form>
+</body>
+<script> 
+    const calculo =  document.getElementById('exercicio1')
+    calculo.addEventListener('submit', function (evento){
+        evento.preventDefault();
+
+        const num1 = parseInt(document.getElementById('Numero1').value)
+        const num2 = parseInt(document.getElementById('Numero2').value)
+        
+        if(num1 > num2){
+            alert(`Maior numero é: ${num1}`)
+        } else if (num2 > num1){
+            alert(`Maior numero é: ${num2}`)
+        } else {
+            alert('numeros iguais')
+        }
+    })
+</script>
+</html>

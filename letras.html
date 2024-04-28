@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Letras</title>
+</head>
+<body>
+    <h1>Exercício 5</h1>
+
+    <form id="exercicio3">
+        <label for="letra">Letra</label>
+        <input type="text" id="Letra">
+         
+
+        <button type="submit" id="input">input</button>
+    </form>
+    <a href="soma.html">Próximo Exercício</a>
+</body>
+<script> 
+    const calculo =  document.getElementById('exercicio3')
+    calculo.addEventListener('submit', function (evento){
+        evento.preventDefault();
+
+        const Letra1 = document.getElementById('Letra').value
+        
+        
+        if(Letra1 == "a"){
+            alert(`A`)
+        } else if (Letra1 == "b"){
+            alert(`B`)
+        } else  {
+            alert('Outra Letra')
+        }
+    })
+</script>
+</html>
